@@ -3,28 +3,42 @@
 
 	<head>
 		<title> Richard Xu </title>
+		<link href="http://s3.amazonaws.com/codecademy-content/courses/ltp/css/shift.css" rel="stylesheet">
+    
+    	<link rel="stylesheet" href="http://s3.amazonaws.com/codecademy-content/courses/ltp/css/bootstrap.css">
+    	<link rel="stylesheet" href="main.css">
 	</head>
 
 	<body>
 
 		<div class = "nav">
-			<ul>
+			<ul class = "pull-left">
 				<li>Projects</li>
 				<li>About me</li>
 				<li>Something else~</li>
+			</ul>
 
+			<ul class = "pull-right">
+				<li>contact info</li>
+				<li>Alan Yao</li>
 			</ul>
 		</div>
 
 
 		<div class = "information">
-			<h1> Richard Xu </h1>
-			<h2> <span class = "developer">Developer</span> | <span class = "education">Student</span> | <span class = "job">Entreprenuer</span> </h2>
-
-			<h2 label = intro> Hi, my name is <span class = "name">Richard Xu, </span> I am a <span class = "school">UC Berkeley</span> student <br> dual majoring in <span class = "majorOne">Bioengineering</span> amd <span class = "majorTwo">Electrical Engineering and Computer Science</span> at </h2>
-
-			<p> But life's not all about work,<br> so I enjoy playing cello and guitar, going on runs across Berkeley,<br> playing video games and going to Bioengineering talks (for fun of course)</p>
+			<div class = "row">
+				<div class = "container">
+					<div class = "col-md-6">
+						<h1> Richard Xu </h1>
+						<h2> <span class = "developer">Developer</span> | <span class = "education">Student</span> | <span class = "job">Entreprenuer</span> </h2>
+					</div>
+					<div class = "col-md-6">
+						<h2 label = intro> Hi, my name is <span class = "name">Richard Xu, </span> I am a <span class = "school">UC Berkeley</span> student <br> dual majoring in <span class = "majorOne">Bioengineering</span> amd <span class = "majorTwo">Electrical Engineering and Computer Science</span> at </h2>
+					</div>
+				</div>
+			</div>
 		</div>
+
 
 		<div class = "quoteOne">
 			<h3> "Move swift as the Wind and closely-formed as the Wood. Attack like the Fire and be still as the Mountain." <br>
@@ -71,7 +85,7 @@
 	color: #515151;
 	font-size: 11px;
 	font-weight: bold;
-	padding-top : 14px;
+	padding-top : 20px;
     padding-bottom : 14px;
     padding-left : 10px;
     padding-right: 10px;
@@ -79,8 +93,10 @@
 }
 
 .nav li{
-	display: inline-block;
+	display: inline;
 	position: relative;
+	margin-left: 20px;
+	margin-right: 20px;
 }
 
 .education{
@@ -112,40 +128,57 @@
 }
 
 .information{
-	font-family: 'Palatino Linotype';
+	background-image: url('https://raw.githubusercontent.com/xurichard/xurichard.github.io/master/images/dock.png');
+	background-size: initial;
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+
+	text-align: center;
+	position: relative;
+
+	height: 600px;font-family: 'Palatino Linotype';
 	color: white;
 	font-size: 11px;
 	font-weight: bold;
 	padding: 14px 10px;
-	text-transform: uppercase;
-	background-image: url('https://raw.githubusercontent.com/xurichard/xurichard.github.io/master/images/dock.png');
-	background-size: cover;
-	background-repeat: no-repeat;
-	text-align: center;
+	text-transform: uppercase;	
+
+	margin: auto;
 }
 
-.information h1{
-	font-family: Copperplate;
+.information .row h1{
 	font-size : 48px;
-    color: black;
-
+    color: orange;
 }
 
-.information p{
+.information .row p{
 	color : black;
 }
 
-body{
-	font: Impact;
-	background-color: white;
+.information .row .container{
+	position :relative;
+	top: 75px;
 }
-p{
-	color: black; 
-	font-size: 14;
-	text-align: center;
-	padding: 30px;
-	text-transform: uppercase;
 
+
+.aboutMe{
+	top:100px;
+}
+
+
+.quoteOne{
+	background-color: #efefef;
+	border-bottom: 1px solid #dbdbdb;
+}
+
+.quoteTwo{
+	background-color: #efefef;
+	border-bottom: 1px solid #dbdbdb;
+}
+
+.quoteThree{
+	background-color: #efefef;
+	border-bottom: 1px solid #dbdbdb;
 }
 
 </style>
